@@ -8,10 +8,15 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <button class="js-button" onclick="game('rock');">ROCK</button>
-    <button class="js-button" onclick="game('paper');">PAPER</button>
-    <button class="js-button" onclick="game('scissors');">SCISSORS</button>
-    <p class="compMove">Computer Move: </p>
-    <p class="score">Wins: 0<br>Losses: 0<br>Ties: 0</p>
+    <div id="button-container">
+        <button class="js-button" onclick="game('rock');"><img src="images/rock.png"></button>
+        <button class="js-button" onclick="game('paper');"><img src="images/paper.png"></button>
+        <button class="js-button" onclick="game('scissors');"><img src="images/scissors.png"></button>
+    </div>
+    <div class="text">
+        <p class="compMove">Computer Move: </p>
+        <img class="images" src="">
+        <p class="score">Wins: 0<br>Losses: 0<br>Ties: 0</p>
+    </div>
 </body>
 </html>

@@ -48,5 +48,8 @@ function game(move) {
     }
 
     document.querySelector(".score").innerText = "Wins: " + score.wins + "\nLosses: " + score.losses + "\nTies: " + score.ties
-    document.querySelector(".compMove").innerText = "Computer Move: " + compMove.toUpperCase()
+    const source = "images/" + compMove + ".png"
+    const imageElement = document.querySelector(".images")
+    imageElement.src = source
+    imageElement.style.width = "200px"
 }
